@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>D·I Concept — Diseño de Interiores</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="D·I Concept: estudio de diseño de interiores. Residencial, comercial, diseño efímero y visualización arquitectónica.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.png">
+</head>
+
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Ir al inicio">
+    <span class="brand-mark">D·I</span> <span class="brand-word">Concept</span>
+  </a>
+
+  <nav class="nav" aria-label="Principal">
+    <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+    <ul class="nav-list">
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#contacto" class="btn">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="home">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Espacios que equilibran <em>estética</em>, <em>función</em> y <em>emoción</em>.</h1>
+      <p>Estudio de interiorismo especializado en proyectos residenciales, comerciales, diseño efímero y visualización 3D.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#portfolio">Ver proyectos</a>
+        <a class="link" href="#contacto">Solicitar propuesta</a>
+      </div>
+    </div>
+    <figure class="hero-image" aria-hidden="true">
+      <!-- Reemplaza por una imagen tuya -->
+      <img src="img/hero.jpg" alt="">
+    </figure>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section">
+    <div class="section-head">
+      <h2>Portfolio</h2>
+      <p>Selección de proyectos y visualizaciones. Haz clic para ampliar.</p>
+    </div>
+
+    <div class="grid">
+      <!-- Reemplaza las rutas por tus imágenes; usa 3–9 para empezar -->
+      <a class="card" href="img/proyecto-01.jpg" target="_blank">
+        <img src="img/proyecto-01.jpg" alt="Proyecto 01">
+        <div class="card-meta">
+          <h3>Residencial · Sala</h3><span>Guadalajara</span>
+        </div>
+      </a>
+
+      <a class="card" href="img/proyecto-02.jpg" target="_blank">
+        <img src="img/proyecto-02.jpg" alt="Proyecto 02">
+        <div class="card-meta">
+          <h3>Comercial · Café</h3><span>CDMX</span>
+        </div>
+      </a>
+
+      <a class="card" href="img/proyecto-03.jpg" target="_blank">
+        <img src="img/proyecto-03.jpg" alt="Proyecto 03">
+        <div class="card-meta">
+          <h3>Diseño efímero</h3><span>Instalación</span>
+        </div>
+      </a>
+
+      <!-- Duplica estos <a class="card"> para más proyectos -->
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section section-alt">
+    <div class="section-head">
+      <h2>Servicios</h2>
+      <p>Soluciones integrales desde el concepto hasta la presentación.</p>
+    </div>
+
+    <div class="features">
+      <article class="feature">
+        <h3>Residencial</h3>
+        <p>Ambientación integral, selección de materiales, diseño de mobiliario y optimización del espacio.</p>
+      </article>
+
+      <article class="feature">
+        <h3>Comercial</h3>
+        <p>Estrategia espacial para marcas: layouts, iluminación, experiencia de cliente y lineamientos visuales.</p>
+      </article>
+
+      <article class="feature">
+        <h3>Diseño efímero</h3>
+        <p>Instalaciones temporales y experiencias para eventos, retail pop-up y espacios patrimoniales.</p>
+      </article>
+
+      <article class="feature">
+        <h3>Visualización 3D</h3>
+        <p>Modelado y renders fotorrealistas para comunicar la esencia del proyecto antes de construirlo.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="section">
+    <div class="about">
+      <figure class="about-media">
+        <img src="img/retrato.jpg" alt="Diego Silva — D·I Concept">
+      </figure>
+      <div class="about-text">
+        <h2>Sobre mí</h2>
+        <p>Soy Diego Silva Villatoro, interiorista y visualizador 3D. Trabajo proyectos residenciales, comerciales y efímeros. Mi enfoque combina claridad funcional, calidez material y una narrativa visual precisa.</p>
+        <ul class="about-highlights">
+          <li>Ganador de instalación efímera · Casa Luis Barragán (2023)</li>
+          <li>Experiencia en distribución espacial, materiales e iluminación</li>
+          <li>Modelado 3D y renders de alto impacto</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section section-alt">
+    <div class="contact">
+      <h2>Contacto</h2>
+      <p>Cuéntame de tu proyecto. Respondo en 24–48 h.</p>
+      <div class="contact-actions">
+        <a class="btn" href="mailto:diegosilva.interiorismo@gmail.com?subject=Proyecto%20D·I%20Concept">Escríbeme por correo</a>
+        <a class="btn btn-outline" href="https://wa.me/523326023654" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="link" href="https://instagram.com/silva.folio" target="_blank" rel="noopener">@silva.folio</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> D·I Concept · Guadalajara, Jalisco · Todos los derechos reservados.</p>
+</footer>
+
+<script>
+  // Año dinámico y menú móvil simple
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const toggle = document.querySelector('.nav-toggle');
+  const list = document.querySelector('.nav-list');
+  toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    list.classList.toggle('open');
+  });
+</script>
+</body>
+</html>
